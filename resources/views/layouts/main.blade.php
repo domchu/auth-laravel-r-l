@@ -21,7 +21,10 @@
             @endguest
             @auth
                  <div class="flex items-center gap-2">
-                    
+                    <form action="{{route('logout')}}" method="post" autocomplete="off">
+                    @csrf
+                    <button onclick="return confirm('Are you sure?')" class="nav-link">Logout</button>
+                    </form>
                 </div> 
             @endauth
         </nav>
