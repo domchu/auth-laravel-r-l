@@ -13,6 +13,12 @@
 
             <input type="password" class="input" placeholder="password" name="password">
         </div>
+        {{-- REMEMBER ME --}}
+        <div class="mb-4">
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        {{-- Password Failed --}}
         @error('failed')
                 <p class="error">{{$message}} </p>
             @enderror
